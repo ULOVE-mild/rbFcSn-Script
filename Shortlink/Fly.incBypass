@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bypass Fly.inc
 // @namespace    Violentmonkey Scripts
-// @version      14.1
+// @version      0.1
 // @author       bFsCnBlogger
 // @run-at       document-body
 // @grant        none
