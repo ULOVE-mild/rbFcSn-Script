@@ -2,7 +2,7 @@
 // @name         hCaptcha reCaptcha Auto Open
 // @namespace    bFsCn Scripts
 // @author       bFsCnBlogger
-// @version      0.1
+// @version      0.2
 // @description  Auto clicks open recaptcha and hcaptcha
 // @match        https://*/recaptcha/*
 // @match        https://*.hcaptcha.com/*hcaptcha-challenge*
