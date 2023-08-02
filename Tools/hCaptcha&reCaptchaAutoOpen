@@ -64,7 +64,7 @@ function isHidden(el) {
 
 
         // RECAPTCHA SECTION
-        const RC_PAUSE = "3000"; // ms to open ( 3000ms = 5sec )
+        const RC_PAUSE = "50000"; // ms to open ( 3000ms = 5sec )
         const CHECK_BOX = ".recaptcha-checkbox-border";
         const RECAPTCHA_STATUS = "#recaptcha-accessible-status";
         const DOSCAPTCHA = ".rc-doscaptcha-body";
