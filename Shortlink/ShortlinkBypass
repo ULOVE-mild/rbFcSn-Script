@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFsCn Script
-// @version      0.1
+// @version      0.2
 // @author       bFsCnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -71,7 +71,7 @@
 // @include /^(https?:\/\/)(.+)?(ouo|forextrader|daga88)(\.today)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(techgeek|adsgo|seulink)(\.digital)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(goto.com|nishankhatri.com)(\.np)(\/.*)/
-// @include /^(https?:\/\/)(.+)?(360shortlink|myra|morunique|tmpfree|reeshort)(\.cf)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(360shortlink|myra|morunique|tmpfree|reeshort|link.myra)(\.cf)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(i8l|clk|pi-l|bcvc|modli|beast|boost|uptobhai|work|5tl|gainl)(\.ink)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(mhma12|surflink|techtrim|adcash|yotrickslog|shortlinks|pdiskpage)(\.tech)(\/.*)/
 // @include /^(https?:\/\/)(kiw|redir.123file|cutl)(\.li)(\/.*)/
@@ -310,7 +310,7 @@
   BypassedBybFcSnblogger(/linkwards.co.in/, {
     '/verify/': [RexBp, 'http://ads.linkwards.com/'],
   }, false);
-  BypassedBybFcSnblogger(/nextvidya.com/, {
+  BypassedBybFcSnblogger(/link.myra.cf/, {
     '/verify/': [RexBp, 'http://linkmay.me/'],
   }, false);
   BypassedBybFcSnblogger(/gpl-market.com/, {
