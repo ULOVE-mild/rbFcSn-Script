@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFsCn Script
-// @version      0.3
+// @version      0.4
 // @author       bFsCnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -974,7 +974,7 @@
             subtree: true});});}
       function sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));}
-      let Web1list = ['biendo.win', 'bemom.com.vn', 'mg188.asia', '88betbongda.com', 'sodovns.com', 'mg188.win', 'iwin68m.com', 'sv388.ac', 'vn88goat.com', 'linkbong88moinhat.org', '69vn.info', 'w88linkz.com', 'vn88.cam', 'vn88.io', 'w88.ong', 'nguyenvanbao.com', 'heenglish.com', 'vailonxx.com', 'bigone.vn', 'hocreview.com', 'casinotructuyen.io', 'kienvang.vn', 'fun88.bio', 'sodo66vn.com', 'fun88.wtf', 'nhacaiuytin.ac', 'asideway.com', '1gom.shop', 'sodocasino68z.com', 'nghiencar.com', 'w88vnz.net', '88bet1.club', 'bk8goat.com', 'rodjulian.com', 'www.hereofamily.com', 'anhdep24.com', 'sunflowersteiner.edu.vn', 'www.covemarkets.com', 'cuanhapkhau.com', 'w88th2.com', 'khoruou-gourmet.com', 'ku11net.co', 'pennbookcenter.com', 'hocbeauty.com', 'fidlarmusic.com', 'www.rezence.com', 'publicananker.com', 'silcot.com.vn', 'lucidcam.com', 'hookeaudio.com'];
+      let Web1list = ['biendo.win', 'bemom.com.vn', 'byboe.com', 'mg188.asia', '88betbongda.com', 'sodovns.com', 'mg188.win', 'iwin68m.com', 'sv388.ac', 'vn88goat.com', 'linkbong88moinhat.org', '69vn.info', 'w88linkz.com', 'vn88.cam', 'vn88.io', 'w88.ong', 'nguyenvanbao.com', 'heenglish.com', 'vailonxx.com', 'bigone.vn', 'hocreview.com', 'casinotructuyen.io', 'kienvang.vn', 'fun88.bio', 'sodo66vn.com', 'fun88.wtf', 'nhacaiuytin.ac', 'asideway.com', '1gom.shop', 'sodocasino68z.com', 'nghiencar.com', 'w88vnz.net', '88bet1.club', 'bk8goat.com', 'rodjulian.com', 'www.hereofamily.com', 'anhdep24.com', 'sunflowersteiner.edu.vn', 'www.covemarkets.com', 'cuanhapkhau.com', 'w88th2.com', 'khoruou-gourmet.com', 'ku11net.co', 'pennbookcenter.com', 'hocbeauty.com', 'fidlarmusic.com', 'www.rezence.com', 'publicananker.com', 'silcot.com.vn', 'lucidcam.com', 'covemarkets.com','hookeaudio.com'];
       if (Web1list.includes(location.host)) {
         let webbtn = await elementReady('#dirrect-countdown-1s > button');
         webbtn.click();
