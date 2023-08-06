@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFsCn Script
-// @version      0.4
+// @version      0.6
 // @author       bFsCnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -1012,6 +1012,7 @@
           if (b) {meta('https://playlink.xyz/' + RegExp.$1);}
           break;
         case 'downfile.site':
+        case 'techacode.com':
           if (b) {meta('https://get.megafly.in/' + RegExp.$1);}
           break;
         case 'examsolution.in':
@@ -1067,7 +1068,6 @@
           if (b) {meta('https://short2fly.xyz/' + RegExp.$1);}
           break;
         case 'giti.works':
-        case 'techacode.com':
         case 'azmath.info':
           if (b) {meta('https://get.mtraffics.com/' + RegExp.$1);}
           break;
