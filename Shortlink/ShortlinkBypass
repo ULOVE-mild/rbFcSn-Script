@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFsCn Script
-// @version      0.6
+// @version      0.7
 // @author       bFsCnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -722,8 +722,10 @@
           return h.searchParams.getAll('url').filter(u => /http(s|):\/\/urlcashh.quest/.test(u))[0];
         } else if (cf && h.href.includes('gos2.softindex.website')) {
           return h.searchParams.getAll('url').filter(u => /http(s|):\/\/gos2.softindex.website/.test(u))[0].replace('gos2.', '');
-        } else if (cf && h.href.includes('gos2.urlcash.click')) {
-          return h.searchParams.getAll('url').filter(u => /http(s|):\/\/gos2.urlcash.click/.test(u))[0].replace('gos2.', '');
+        } else if (cf && h.href.includes('go2.softindex.site')) {
+          return h.searchParams.getAll('url').filter(u => /http(s|):\/\/go2.softindex.site/.test(u))[0].replace('go2.', '');
+        } else if (cf && h.href.includes('goes3.urlcash.click')) {
+          return h.searchParams.getAll('url').filter(u => /http(s|):\/\/goes3.urlcash.click/.test(u))[0].replace('goes3.', '');
         } else if (cf && h.href.includes('to.morunique.cf')) {
           return h.searchParams.getAll('url').filter(u => /http(s|):\/\/to.morunique.cf/.test(u))[0].replace('to.', 'so.');
         } else if (cf && h.href.includes('#')) {
