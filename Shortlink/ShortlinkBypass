@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFsCn Script
-// @version      0.9
+// @version      1.0
 // @author       bFsCnBlogger
 // @run-at       document-start
 // @antifeature  tracking
