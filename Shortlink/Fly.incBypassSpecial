@@ -1,21 +1,12 @@
 // ==UserScript==
 // @name        Special Fly.inc Pass
 // @namespace   bFcsn scripts
-// @match       *://thumb8.net/*
-// @match       *://thumb9.net/*
-// @match       *://crewbase.net/*
-// @match       *://crewus.net/*
-// @match       *://shinchu.net/*
-// @match       *://shinbhu.net/*
-// @match       *://ultraten.net/*
-// @match       *://uniqueten.net/*
-// @match       *://topcryptoz.net/*
-// @match       *://allcryptoz.net/*
-// @match       *://techedifier.com/*
-// @match       *://phineypet.com/*
-// @match       *://talkforfitness.com/*
+// @include /^(https?:\/\/)(.+)?(techedifier|phineypet|talkforfitness|batmanfactor|laptopfinest)(\.com)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(thumb8|thumb9|crewbase|crewus|shinchu|shinbhu|ultraten|uniqueten|topcryptoz|allcryptoz)(\.net)(\/.*)/
+// @match       *://misterio.ro/*
+// @match       *://mejoresperfumes.club/*
 // @grant       none
-// @version     0.2
+// @version     0.3
 // @author      bFsCnBlogger
 // @description Bypass fly.inc no need recaptcha
 // @run-at      document-body
