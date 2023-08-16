@@ -6,7 +6,7 @@
 // @match       *://misterio.ro/*
 // @match       *://mejoresperfumes.club/*
 // @grant       none
-// @version     0.3
+// @version     0.4
 // @author      bFsCnBlogger
 // @description Bypass fly.inc no need recaptcha
 // @run-at      document-body
