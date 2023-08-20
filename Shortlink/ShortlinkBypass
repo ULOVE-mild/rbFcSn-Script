@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFcSn Script
-// @version      1.8
+// @version      1.9
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -1129,7 +1129,11 @@
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/blog24.me/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
-      if (elementExists('#verify')) {$('.blog-details').text('Silahkan Belajar Berhitung Dulu ,Selesaikan dulu Hcaptcha, Hanya di Step Awal & Akhir, Tunggu Loading Selesai, Lanjut Klik X Warna Merah');
+      if (elementExists('#verify')) {$('.tc-light').text('Monggo Juragan, Lanjut Klik X Warna Merah');
+        setTimeout(() => {exBt.click();}, 5 * 1000);}});
+    BypassedBybFcSnblogger(/oscut.fun/, function() {EnableRCF();
+      let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
+      if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan Klik X Warna Merah, Tidak Perlu Klik Continue');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/btcpany.com|zombiebtc.com|claimfey.com|battleroyal.online|thefastpost.com|blog24.me/, function() {
       parent.open = BpBlock();SubmitIfExists('#link1s-form', 1);ClickIfExists('#next-step-button', 3);});
