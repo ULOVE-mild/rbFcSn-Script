@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFcSn Script
-// @version      2.0
+// @version      2.0.1
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -22,7 +22,7 @@
 // @include /^(https?:\/\/)(.+)?(takez|linksfire|vosan|tinygo|veganab|adfloz|fexkomin|linksly|finsurances)(\.co)(\/.*)/
 // @include /^(https?:\/\/)(girls-like|gobits|zoss|tlin|terafly|petafly|gigafly|adnews|papanews|panyflay|mozzfly|shortus|short.croclix|best-news|4cash|mega-news|wildblog|dddrive|linkpoi|m.newhit|mboost|linkshorts|exafly|nonofly|lozzfly|uptomega|stfly|adbull|youshort|health-and|cutx|adsk|linkfly|appdrive|shorter.earn-hub|pkin|cashando|hunterkiller|acortalink|ar-goal|linkdam|adzully|adbully|zumpa|botfly|weezo|gtlinks|krownlinks|blog24|sh24|slfly|dbree|linkmay|yudiblog)(\.me)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(theconomy|richlink|qnix|hatelink|rb7|shrinke|skiplink)(\.me)(\/.*)/
-// @include /^(https?:\/\/)(newforex|wplink|nbyts|wealthystyle|clicksfly|happy-living|webcoin.coinrain|teacherana|earnow|earn-cash|yourtechnology|apks|network-earn|shopforex|o-pro|wedocrypto|softindexsite|ea-shorter.earn-hub|kooora365|flylinks|earn-bitcoin|ludofantsypk|panytourism|wikiversity|exactpay|seulink|clickmais)(\.online)(\/.*)/
+// @include /^(https?:\/\/)(newforex|wplink|nbyts|wealthystyle|clicksfly|happy-living|webcoin.coinrain|teacherana|earnow|earn-cash|yourtechnology|apks|network-earn|shopforex|o-pro|wedocrypto|softindexsite|ea-shorter.earn-hub|kooora365|flylinks|earn-bitcoin|ludofantsypk|blog.panytourism|wikiversity|exactpay|seulink|clickmais)(\.online)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(readi|linkmumet|shorte|battleroyal|kjcrypto|litecoinly|techeysub|forexit|o-pro)(\.online)(\/.*)/
 // @include /^(https?:\/\/)(sitr|downfile|savelink|linkshortify|shareus|mobileprice|mynurse|short1|forextrader|shortener.goldcontent|lksfy|1xlink|savelink|busthings|icerik|adfly)(\.site)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(cekip|link4rev|coin-city|urlcash|alwrificlick|softindex|promo-visits|bluemediafile|flyearn|claimbits|shtfly)(\.site)(\/.*)/
@@ -805,7 +805,6 @@
     BypassedBybFcSnblogger(/cshort.org/, function() {ClickIfExists('.timer.redirect', 3, 'setInterval');});
     BypassedBybFcSnblogger(/up-load.one|fc-lc.com|fc-lc.xyz/, function() {ClickIfExists('#submitbtn', 2);});
     BypassedBybFcSnblogger(/megaupto.com/, function() {ClickIfExists('#direct_link > a:nth-child(1)', 2);});
-    BypassedBybFcSnblogger(/panytourism.online/, function() {SubmitIfExists('.timer-container > form', 3);});
     BypassedBybFcSnblogger(/tinyurl.so/, function() {ClickIfExists('.btn.btn-secondary', 3, 'setInterval');});
     BypassedBybFcSnblogger(/sinonimos.de|quesignifi.ca/, function() {ClickIfExists('#cbt', 5, 'setInterval');});
     BypassedBybFcSnblogger(/takem.co|themorningtribune.com/, {
@@ -1134,7 +1133,7 @@
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
       if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan Klik X Warna Merah, Tidak Perlu Klik Continue');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
-    BypassedBybFcSnblogger(/btcpany.com|zombiebtc.com|claimfey.com|battleroyal.online|thefastpost.com|blog24.me/, function() {
+    BypassedBybFcSnblogger(/btcpany.com|zombiebtc.com|blog.panytourism.online|claimfey.com|battleroyal.online|thefastpost.com|blog24.me/, function() {
       parent.open = BpBlock();SubmitIfExists('#link1s-form', 1);ClickIfExists('#next-step-button', 3);});
     BypassedBybFcSnblogger(/9xupload.asia/, function() {
       ClickIfExists('#container > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > a:nth-child(1)', 2);
