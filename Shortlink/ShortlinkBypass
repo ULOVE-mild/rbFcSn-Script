@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFcSn Script
-// @version      1.9
+// @version      2.0
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -1118,10 +1118,9 @@
       ClickIfExists('.btn-captcha.btn-primary.btn', 8, 'setInterval');});
     BypassedBybFcSnblogger(/filedm.com/, function() {
       if (elementExists('#dlbutton')) {waitForElm('#dlbutton', fdm => redirect('http://cdn.directfiledl.com/getfile?id=' + fdm.href.split('_')[1], false));} else {}});
-    BypassedBybFcSnblogger(/btcbitco.in|readbitcoin.org|btcsatoshi.net/, function() {
-      EnableRCF();let RamaBtn = Array.from(BpAll("button:not([hidden])"));let RamaBt = RamaBtn.find(el => el.textContent.includes('Next'));
-      if (elementExists('#verify')) {$('.entry-title').text('Mari Kita Bergoyang ');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
-        $('.mh-clearfix.entry-content').text('Silahkan Tunggu Bar atau Timer Selesai, Lanjut Klik X Warna Merah, Untuk Domain crypto4u Manual Dulu ya, Jangan Berantem Yak, Gak Baik');
+    BypassedBybFcSnblogger(/btcbitco.in|readbitcoin.org|btcsatoshi.net|crypto4yu.com/, function() {
+      if (elementExists('#verify')) {$('.entry-title').text('Ada yang DiGoblok-Goblokin, LOL ');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
+        $('.alert-danger').text('Monggo Juragan Tunggu Bar atau Timer Selesai, Lanjut Klik X Warna Merah');
         setTimeout(() => {RamaBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/exactpay.online/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
