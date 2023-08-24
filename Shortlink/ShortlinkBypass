@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shortlink Bypass
 // @namespace    bFcSn Script
-// @version      2.0.2
+// @version      2.0.3
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -81,7 +81,7 @@
 // @include /^(https?:\/\/)(1dogecoin|faucet|cpu-miner.leaks)(\.work)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(123link|mtagang|shorturl)(\.biz)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(3shorturl|earnbitcoin)(\.gq)(\/.*)/
-// @include /^(https?:\/\/)(.+)?(exe|exee|exep|exego|upfiles|cutty|linkfly|rsgamer)(\.app)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(exe|exee|exep|exego|exeo|upfiles|cutty|linkfly|rsgamer)(\.app)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(makeeasybtc|softindex|techus|cryptorotator)(\.website)(\/.*)/
 // @include /^(https?:\/\/)(linka|xtrabits|skipads|softindex|elinks|freecc|ccshort|clicknupload|workink|filepress|coinsl|adbitfly)(\.click)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(easysl|adlink|adzilla|urlcash|freebitcoin|urlcashh|revly|jetmedia)(\.click)(\/.*)/
@@ -717,56 +717,16 @@
         default: break;}})(new URL(location.href));if (l) {location.href = l;}
     waitForElm('a.s-btn-f', smp => redirect(smp.href, false));
     // if not working , Please Report , to Correct , Thanks
-    BypassedBybFcSnblogger(/mdn.lol/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let mdn = setInterval(() => {
-          if (Captchacheck()) {clearInterval(mdn);
-            click('div form button');}}, 1 * 1000);
-      } else {setTimeout(() => {click('div form center button');}, 11 * 1000);}});
-    BypassedBybFcSnblogger(/freeoseocheck.com/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let fsc = setInterval(() => {
-          if (Captchacheck()) {clearInterval(fsc);
-            click("button[id^='okius']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='okius']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/wiki-topia.com/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let wtp = setInterval(() => {
-          if (Captchacheck()) {clearInterval(wtp);
-            click("button[id^='lsduc']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='lsduc']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/carsmania.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let wtp = setInterval(() => {
-          if (Captchacheck()) {clearInterval(wtp);
-            click("button[id^='ijdia']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='ijdia']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/cryptowidgets.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let cwg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(cwg);
-            click("button[id^='krpto']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='krpto']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/makeupguide.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let cwg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(cwg);
-            click("button[id^='ksdjud']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='ksdjud']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/insurancegold.in/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(isg);
-            click("button[id^='rksu']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='rksu']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/carstopia.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(isg);
-            click("button[id^='odaij']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='odaij']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/coinsvalue.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(isg);
-            click("button[id^='jhsuy']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='jhsuy']");}, 19 * 1000);}});
-    BypassedBybFcSnblogger(/cookinguide.net/, function() {EnableRCF();
-      if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {
-          if (Captchacheck()) {clearInterval(isg);
-            click("button[id^='uansdi']");}}, 1 * 1000);
-      } else {setTimeout(() => {click("button[id^='uansdi']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/mdn.lol/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let mdn = setInterval(() => {if (Captchacheck()) {clearInterval(mdn);click('div form button');}}, 1 * 1000);} else {setTimeout(() => {click('div form center button');}, 11 * 1000);}});
+    BypassedBybFcSnblogger(/freeoseocheck.com/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let fsc = setInterval(() => {if (Captchacheck()) {clearInterval(fsc);click("button[id^='okius']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='okius']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/wiki-topia.com/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let wtp = setInterval(() => {if (Captchacheck()) {clearInterval(wtp);click("button[id^='lsduc']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='lsduc']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/carsmania.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let wtp = setInterval(() => {if (Captchacheck()) {clearInterval(wtp);click("button[id^='ijdia']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='ijdia']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/cryptowidgets.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let cwg = setInterval(() => {if (Captchacheck()) {clearInterval(cwg);click("button[id^='krpto']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='krpto']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/makeupguide.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let cwg = setInterval(() => {if (Captchacheck()) {clearInterval(cwg);click("button[id^='ksdjud']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='ksdjud']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/insurancegold.in/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {if (Captchacheck()) {clearInterval(isg);click("button[id^='rksu']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='rksu']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/carstopia.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {if (Captchacheck()) {clearInterval(isg);click("button[id^='odaij']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='odaij']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/coinsvalue.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {if (Captchacheck()) {clearInterval(isg);click("button[id^='jhsuy']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='jhsuy']");}, 19 * 1000);}});
+    BypassedBybFcSnblogger(/cookinguide.net/, function() {EnableRCF();if (elementExists('.g-recaptcha')) {let isg = setInterval(() => {if (Captchacheck()) {clearInterval(isg);click("button[id^='uansdi']");}}, 1 * 1000);} else {setTimeout(() => {click("button[id^='uansdi']");}, 19 * 1000);}});
     // if not working , Please Report , to Correct , Thanks
     BypassedBybFcSnblogger(/ouo.today/, function() {location.href = nextUrl;});
     BypassedBybFcSnblogger(/upload.ee/, function() {ClickIfExists('#d_l', 2);});
@@ -1120,16 +1080,16 @@
     BypassedBybFcSnblogger(/filedm.com/, function() {
       if (elementExists('#dlbutton')) {waitForElm('#dlbutton', fdm => redirect('http://cdn.directfiledl.com/getfile?id=' + fdm.href.split('_')[1], false));} else {}});
     BypassedBybFcSnblogger(/btcbitco.in|readbitcoin.org|btcsatoshi.net|crypto4yu.com/, function() {
-      if (elementExists('#verify')) {$('.entry-title').text('Ada yang DiGoblok-Goblokin, LOL ');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
-        $('.alert-danger').text('Monggo Juragan Tunggu Bar atau Timer Selesai, Lanjut Klik X Warna Merah');
+      if (elementExists('#verify')) {$('.entry-title').text('Jika Detect, Klik ok 2x lanjut Refresh, OKAY ');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
+        $('.alert-danger').text('Monggo Juragan Tunggu Timer Selesai, Lanjut Klik X Warna Merah');
         setTimeout(() => {RamaBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/exactpay.online/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
-      if (elementExists('#verify')) {$('.blog-details').text('Silahkan Belajar Berhitung Dulu, Selesaikan dulu Hcaptcha, Hanya di Step Awal & Akhir, Tunggu Loading Selesai, Lanjut Klik X Warna Merah');
+      if (elementExists('#verify')) {$('.blog-details').text('Silahkan Belajar Berhitung Dulu, Tunggu Loading Selesai, Lanjut Klik X Warna Merah');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/blog24.me/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
-      if (elementExists('#verify')) {$('.tc-light').text('Monggo Juragan, Lanjut Klik X Warna Merah');
+      if (elementExists('#verify')) {$('.tc-light').text('Monggo Juragan, Klik Continue Lanjut Klik X Warna Merah');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/oscut.fun/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
