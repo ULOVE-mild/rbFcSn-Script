@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL bFcSn
 // @namespace    bFcSn Script
-// @version      2.2
+// @version      2.3
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -349,7 +349,7 @@
   bFcSnblogger('cosmictap.in|dare2qualify.com', 'link', 'https://ffworld.xyz//safe.php?link=');
   bFcSnblogger('kienthucrangmieng.com|thuocdangian.net|chinhnhacoban.com|coin-free.com|fanclup.info|tremamnon.com', 'wpsafelink', '');
   BypassedBybFcSnblogger(/short.rainurl.com|short.snowurl.com|short.dash-free.com/, function() {location = location.href.replace('short.', '');});
-  BypassedBybFcSnblogger(/go.illink.net|go.pong.pw|go.earnfacut.xyz|go.link4rev.site|go.urlcash.site/, function() {location = location.href.replace('go.', '');});
+  BypassedBybFcSnblogger(/go.birdurls.com|go.owllink.net|go.illink.net|go.pong.pw|go.earnfacut.xyz|go.link4rev.site|go.urlcash.site/, function() {location = location.href.replace('go.', '');});
   BypassedBybFcSnblogger(/teachsansar.com|technicalatg.com|modzilla.in|jetmedia.click|foodxor.com|cdrab.com|admediaflex.com|datacheap.io|sportweb.info|bitcrypto.info|offerinfo.net/, () => waitForElm("#wpsafegenerate > #wpsafe-link > a[href]", safe => redirect(safe.href)));
   BypassedBybFcSnblogger(/ouo.io/, function() {if (BpParams.has('s') && location.href.includes('link.nevcoins.club')) {
       location = 'https://' + BpParams.getAll('s');} else if (BpParams.has('s')) {location = BpParams.getAll('s');}});
