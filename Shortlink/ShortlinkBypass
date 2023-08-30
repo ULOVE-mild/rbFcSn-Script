@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL bFcSn
 // @namespace    bFcSn Script
-// @version      2.3
+// @version      2.4
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -1027,7 +1027,7 @@
     BypassedBybFcSnblogger(/tii.la/, function() {if (elementExists('#link-view')) {
         let sbf = setInterval(function() {if (Captchacheck()) {clearInterval(sbf);ClickIfExists('#continue');}}, 500);}});
     BypassedBybFcSnblogger(/skiplink.me|alpinecorporate.com/, function() {
-      ClickIfExists('#alf_continue_captcha', 2);ClickIfExists('#alf_continue', 3, 'setInterval');});
+      ClickIfExists('#alf_continue_button_outer', 2);ClickIfExists('#alf_continue', 3, 'setInterval');});
     BypassedBybFcSnblogger(/alpinecorporate.com/, function() {
       ClickIfExists('#alf_continue_captcha', 2);ClickIfExists('#alf_get_link', 3, 'setInterval');});
     BypassedBybFcSnblogger(/apanmusic.in/, function() {waitForElm('a#notarobot.button', ams => redirect(ams.href, false));
@@ -1093,7 +1093,7 @@
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/blog24.me/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('VERIFY'));
-      if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan, Klik Continue Lanjut Klik X Warna Merah');
+      if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan, Klik Verify Lanjut Klik X Warna Merah');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/oscut.fun/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Continue'));
@@ -1101,7 +1101,7 @@
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/bakumoney.com/, function() {EnableRCF();
       let exBtn = Array.from(BpAll("button:not([hidden])"));let exBt = exBtn.find(el => el.textContent.includes('Verify'));
-      if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan Klik X Warna Merah, Tidak Perlu Klik Continue');
+      if (elementExists('#verify')) {$('.alert-primary').text('Monggo Juragan, Klik Verify Lanjut Klik X Warna Merah');
         setTimeout(() => {exBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/btcpany.com|zombiebtc.com|blog.panytourism.online|claimfey.com|battleroyal.online|thefastpost.com|blog24.me/, function() {
       parent.open = BpBlock();SubmitIfExists('#link1s-form', 1);ClickIfExists('#next-step-button', 3);});
