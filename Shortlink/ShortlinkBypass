@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL bFcSn
 // @namespace    bFcSn Script
-// @version      2.5
+// @version      2.6
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -15,7 +15,7 @@
 // @include /^(https?:\/\/)(.+)?(digitalnaz|owllink|mozlink|cryptosats|rocklinks|celinks|jiotech|bitcomarket|illink|jemari|paid4link|link3s|boscoin|linkrex|fire-link|urlw|pilinks|linkshortify|youshort|bicolink|cookinguide|indiurl.in|vip-link|themezon|tnshort|makeupguide|carstopia|btcsatoshi|hostadviser|carsmania|file-upload|up-4ever)(\.net)(\/.*)/
 // @include /^(https?:\/\/)(tnlink|jrlinks|qualitystudymaterial|missionhight|wpking|zagl|streamshort|cutp|earnmoj|cplink|cryptomonitor|linkshortify|htlinks|linkocean|djxmaza|bildirim|battlechamp|sahilsumra|kerdlinfo|urlcut|insurancevlog|itechlogic|videolyrics|tekcrypt|missionhight|gplinks|moddingzone|adybrands|gz2|dulink|aclinks|hidelinks|shortearn|u.apgy|modzilla|thebestwishes|mrdoge|s2fly|filerio|thebloggerspoint|jslink|moviesnew|technocubes|afly|healthynepal|djnonstopmusic|omegalinks|jobform|kingbit.co|du-link|ouoi|by6|adrinolinks|rklinks|mymobilehub|techdaze|link4earn|rupamobile|examsolution|earn4link|kalvidudes|techwithsanikant|ibyt|flyurl|cosmictap|naukrilelo|nanolinks|cutp|linkpays|trends99|link.skm4u.co|linkwards.co|computerpedia|apkupload|banaraswap|jobphoria|techincubator|bookszone|file-upload|freebitco|apna-blog|earn4clicks|adbitfly|greylinks|djqunjab|xrodyasir|go.earnylink|healthynepal|shrinkme|shrinkbit|sl.ltc25)(\.in)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(cashurl|bitcoinly|crazyblog|zolomix|technologylover|expertlinks|largestpanel|rsrlink|short2url|99links|enit|url2go|tnvalue|pvidly|apurl|urlinked|mdlink|gamerfang|writedroid|teckypress|fixno|paisakamalo|inkik|shrinkforearn|easysky|mdiskplayer|akcartoons|open2get|adzz|qora|insurancegold|smallinfo|filmypoints|linkshild|viplink|cuturl|e2share|shorturllink|opiniontoday|theforyou|sigmalinks|financerites|cordtpoint.co|mdisk.net|techyinfo|btcbitco|apnashortener|megafly|megaurl|tplinks|tnlinks|meclipstudy|v2links|finclub|greymatterslinks|shareus|apanmusic|shrinkbit)(\.in)(\/.*)?/
-// @include /^(https?:\/\/)(.+)?(scratch247|azmath|mobilereview|inform3tion|shortlinkto|wez|bitcrypto|cooklike|videoclip|brbushare|fanclup|nulledlist|coinscap|1short|69vn|web1s|missreview|every-crypto|ajlinks|bit4me|sportweb)(\.info)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(scratch247|azmath|mobilereview|inform3tion|shortlinkto|wez|bitcrypto|cooklike|videoclip|brbushare|fanclup|nulledlist|coinscap|1short|69vn|web1s|missreview|every-crypto|ajlinks|bit4me|sportweb|short.shortlinks)(\.info)(\/.*)/
 // @include /^(https?:\/\/)(exee.my|onlineteori.my|karyawan.co|activity.my|massive.my|caview.my|nesiaku.my|lewati|arahlink|linkk|link.nesia.my|omdata.my|mydata.my|healthydad.my|lajangspot.web|mbantul.my)(\.id)(\/.*)/
 // @include /^(https?:\/\/)(.+)?(suratresmi|carapedi|salink|mycut.my|apasih.my|indofaucet.my|wapka|tonanmedia.my)(\.id)(\/.*)/
 // @include /^(https?:\/\/)(aylink|mynewsmedia|gtlink|droplink|123link|linksfy|adshorti|hxfile|dosya|takem|dausel|modlink|slwatch|5tl|desiupload|tech5s|9-animie|veganho|nulledmod|veganac|dealprice|arabplus2|cut-y|adshort|sub2me|gplinks|web1s|ku11net|mixdrop)(\.co)(\/.*)/
@@ -1084,7 +1084,7 @@
     BypassedBybFcSnblogger(/filedm.com/, function() {
       if (elementExists('#dlbutton')) {waitForElm('#dlbutton', fdm => redirect('http://cdn.directfiledl.com/getfile?id=' + fdm.href.split('_')[1], false));} else {}});
     BypassedBybFcSnblogger(/btcbitco.in|readbitcoin.org|btcsatoshi.net|crypto4yu.com/, function() {
-      if (elementExists('#verify')) {$('.entry-title').text('Jika Detect, Klik ok 2x lanjut Refresh, OKAY ');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
+      if (elementExists('#verify')) {$('.entry-title').text('Sekarang Tidak Perlu Refresh-Refreshan, Langsung Klik Continue');$('.vcard.author.entry-meta-author').text('bFcSnblogger');
         $('.alert-danger').text('Monggo Juragan Tunggu Timer Selesai, Lanjut Klik X Warna Merah');
         setTimeout(() => {RamaBt.click();}, 5 * 1000);}});
     BypassedBybFcSnblogger(/exactpay.online/, function() {EnableRCF();
@@ -1352,7 +1352,7 @@
                   method: "POST", body: JSON.stringify(json_body), headers: {"Accept": 'application/json', "Content-Type": 'application/json'}
                 }).then(r => r.json()).then(json => {if (json?.data.target) {redirect(json.data.target);}});}});}});
         linkverraw.apply(this, arguments);};});
-    BypassedBybFcSnblogger(/oko.sh|ckk.ai|aii.sh|celinks.net|terafly.me|linksfy.co|short.express|cryptosh.pro|goo.st|playstore.pw|tfly.link|ar-goal.me|shortzon.com|beast.ink|mitly.us|shortnow.xyz|1xlink.site|techsamir.com|s2fly.in|cashando.me|linka.click|adsy.pw|tinycmd.com|tinygo.co|urlw.net|ufacw.com|pndx.live|makemoneywithurl.com|gawbne.com|sharemods.com|weezo.me|adnews.me|wedocrypto.online|bitcoinwinco.com|liinkat.com|jameeltips.us|satoshi-win.xyz|tinybc.com|cortaly.com|earnbitcoin.gq|flylinks.online|clicklink.fun|inkik.in|cutearn.net|hatelink.me|viewfr.com|wez.info|coinsl.click|links.apksvip.com|payskip.org|myartical.xyz|xcut.link|zumpa.me/, function() {EnableRCF();parent.open = BpBlock();
+    BypassedBybFcSnblogger(/oko.sh|ckk.ai|aii.sh|celinks.net|terafly.me|linksfy.co|short.express|cryptosh.pro|goo.st|playstore.pw|tfly.link|ar-goal.me|shortzon.com|beast.ink|mitly.us|shortnow.xyz|1xlink.site|techsamir.com|s2fly.in|cashando.me|linka.click|adsy.pw|tinycmd.com|tinygo.co|urlw.net|ufacw.com|pndx.live|makemoneywithurl.com|gawbne.com|sharemods.com|weezo.me|adnews.me|wedocrypto.online|bitcoinwinco.com|liinkat.com|jameeltips.us|satoshi-win.xyz|tinybc.com|cortaly.com|earnbitcoin.gq|flylinks.online|clicklink.fun|inkik.in|cutearn.net|hatelink.me|viewfr.com|wez.info|coinsl.click|short.shortlinks.info|links.apksvip.com|payskip.org|myartical.xyz|xcut.link|zumpa.me/, function() {EnableRCF();parent.open = BpBlock();
       if (elementExists('.g-recaptcha') || elementExists('#captchaShortlink')) {} else {
         SubmitIfExists('#link-view', 1) || SubmitIfExists('#form-continue', 1) || SubmitIfExists('.col-md- > form', 1) || SubmitIfExists('#nextstepform', 1) || SubmitIfExists('.text-center.row > form', 1) || SubmitIfExists('div.col-md-6 form', 2) || SubmitIfExists('div.col-md-12 form', 2) || SubmitIfExists('div.text-center form', 1) || SubmitIfExists('#submit-form', 1) || SubmitIfExists('#before-captcha', 1) || SubmitIfExists('#yuidea', 1) || SubmitIfExists('#dForm', 1) || SubmitIfExists('#exfoary-form', 2) || SubmitIfExists('#hidden form', 1) || SubmitIfExists('#submit_first_page', 1) || SubmitIfExists('#test', 1) || SubmitIfExists('form.text-center', 1);}});
     BypassedBybFcSnblogger(/autofaucet.dutchycorp.space/, function() {let autoRoll = false;
