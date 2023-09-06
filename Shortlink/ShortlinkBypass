@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL bFcSn
 // @namespace    bFcSn Script
-// @version      2.6
+// @version      2.6.1
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -126,6 +126,7 @@
 // @match   *://*/*?xref=*&sl=*
 // @match   *://short.express/*
 // @match   *://*.coinhub.wiki/*
+// @match   *://*.clk.wiki/*
 // @match   *://urlcashh.quest/*
 // @match   *://arbweb.info/sl/*
 // @match   *://*.cizgifilm.tv/*
@@ -1072,7 +1073,7 @@
       ClickIfExists('.mngez-free-download', 2);waitForElm('span#direct_link a', cd => redirect(cd.href, false));});
     BypassedBybFcSnblogger(/theconomy.me|askpaccosi.com|cryptomonitor.in|2the.space|wikiversity.online|lifeinsurancesblog.xyz/, function() {
       var tform = bp('#landing');redirect(JSON.parse(atob(tform.newwpsafelink.value)).linkr, false);});
-    BypassedBybFcSnblogger(/enit.in|financerites.in/, function() {parent.open = BpBlock();
+    BypassedBybFcSnblogger(/enit.in|financerites.in|clk.wiki/, function() {parent.open = BpBlock();
       let enit = setInterval(function() {if (Captchacheck()) {clearInterval(enit);ClickIfExists('.btn-captcha.btn-primary.btn');}}, 500);});
     BypassedBybFcSnblogger(/techyreviewx.com|desiupload.co/, function() {ClickIfExists('.downloadbtn.btn-block.btn-primary.btn', 2);
       waitForElm('a.btn.btn-primary.btn-block.mb-4', rex => redirect(rex.href, false));});
