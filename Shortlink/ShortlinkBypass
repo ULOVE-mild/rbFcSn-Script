@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL bFcSn
 // @namespace    bFcSn Script
-// @version      2.8
+// @version      2.9
 // @author       bFcSnBlogger
 // @run-at       document-start
 // @antifeature  tracking
@@ -337,14 +337,13 @@
   bFcSnblogger('bookszone.in', 'link', 'https://finoxpert.com/safe.php?link=');
   bFcSnblogger('www.filmypoints.in', 'link', 'https://tech.smallinfo.in/Gadget/');
   bFcSnblogger('getloanmoney.com', 'adlinkfly', 'https://link.adcash.tech/', true);
-  bFcSnblogger('insurancepost.xyz', 'link', 'https://blog.financeandinsurance.xyz/');
+  bFcSnblogger('financeandinsurance.xyz', 'link', 'https://blog.financeandinsurance.xyz///');
   bFcSnblogger('battleroyal.online', 'link', 'https://zubatecno.com/safe.php?link=');
   bFcSnblogger('apasih.my.id|healthydad.my.id', 'link', 'https://link.get4llink.com/');
   bFcSnblogger('amritadrino.com', 'link', 'https://wikitraveltips.com/safe.php?link=');
   bFcSnblogger('financeyogi.net', 'link', 'https://market.finclub.in/safe2.php?link=');
   bFcSnblogger('qualitystudymaterial.in', 'link', 'https://thehostingmentor.com/mylink/');
   bFcSnblogger('manga2day.com|gam3ah.com|m4cut.com|soft3arbi.com|alaashow.fun', 'link', '');
-  bFcSnblogger('financeandinsurance.xyz', 'link', 'https://insurancepost.xyz/go.php?link=');
   bFcSnblogger('techloadz.com|sportsmediaz.com', 'link', 'https://link.cloudshrinker.com//');
   bFcSnblogger('cosmictap.in|dare2qualify.com', 'link', 'https://ffworld.xyz//safe.php?link=');
   bFcSnblogger('kienthucrangmieng.com|thuocdangian.net|chinhnhacoban.com|coin-free.com|fanclup.info|tremamnon.com', 'wpsafelink', '');
@@ -586,7 +585,7 @@
         case 'ledifha.com':
           if (b) {meta('https://process.ledifha.com/' + RegExp.$1);} break;
         case 'sahlmarketing.net':
-          if (b) {meta('https://linko.earnify.pro/' + RegExp.$1);} break;
+          if (b) {meta('https://earnify.pro/' + RegExp.$1);} break;
         case 'app.trangchu.news':
           if (b) {meta('https://get.megaurl.in/' + RegExp.$1);} break;
         case 'giti.works': case 'cafenau.com':
